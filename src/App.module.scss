@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  &-left {
+    flex-shrink: 0;
+  }
+  &-body {
+    width: 100%;
+    padding: 20px;
+  }
+}

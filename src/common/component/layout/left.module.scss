@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  width: 240px;
+  height: 100vh;
+  padding-left: 12px;
+  flex-direction: column;
+  background: rgb(238, 238, 238);
+  h1 {
+    color: rgb(82, 82, 82);
+    font-size: 22px;
+    font-weight: normal;
+  }
+  &-program {
+    h2 {
+      color: rgb(82, 82, 82);
+      font-size: 16px;
+      font-weight: normal;
+    }
+    a {
+      margin-left: 4px;
+      color: #000000;
+      font-size: 14px;
+    }
+  }
+}
