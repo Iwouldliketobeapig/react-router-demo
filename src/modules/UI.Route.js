@@ -1,15 +1,17 @@
 import React, { PureComponent } from 'react';
-import { Switch, Route } from 'react-router';
+import { Switch, Route, withRouter } from 'react-router';
 import ParameterPath from './parameter/UI.Path';
+import ParameterState from './parameter/UI.State';
 
-export default class UIROute extends PureComponent {
+export default withRouter (class UIROute extends PureComponent {
 
   render () {
     return (
       <Switch>
-        <Route path="/user/:id" component={ParameterPath}/>
+        <Route exact={true} path="/parameter/state" component={ParameterState} />
+        <Route exact={true} path="/parameter/id/:id" component={ParameterPath} />
       </Switch>
     )
   }
 
-}
+})

@@ -11,13 +11,17 @@
     font-weight: normal;
   }
   &-program {
+    display: flex;
+    flex-direction: column;
     h2 {
+      margin-bottom: 12px;
       color: rgb(82, 82, 82);
       font-size: 16px;
       font-weight: normal;
     }
     a {
       margin-left: 4px;
+      margin-bottom: 6px;
       color: #000000;
       font-size: 14px;
     }
